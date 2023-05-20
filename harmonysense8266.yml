@@ -18,12 +18,16 @@ esp8266:
 
 logger:
 
+network:
+
+wifi:
+
 api:
 
 ota:
 
 dashboard_import:
-  package_import_url: github://withharmony/esphome/harmonysense8266.yml
+  package_import_url: github://withharmony/esphome/harmonysense8266.yml@main
   import_full_config: true
 
 improv_serial:
