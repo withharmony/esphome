@@ -1,0 +1,25 @@
+substitutions:
+  name: "harmonysense8266"
+  friendly_name: "Harmony Sense (WiFi + USB)"
+
+esphome:
+  name: "${name}"
+  friendly_name: "${friendly_name}"
+  name_add_mac_suffix: true
+
+  project:
+    name: harmony.sense8266
+    version: "1.0"
+
+logger:
+
+api:
+
+ota:
+
+dashboard_import:
+  package_import_url: github://withharmony/esphome/harmonysense8266.yml
+  import_full_config: true
+
+improv_serial:
+  next_url: https://example.com/project-template/manual?ip={{ip_address}}&name={{device_name}}&version={{esphome_version}}
