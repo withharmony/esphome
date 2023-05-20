@@ -22,4 +22,4 @@ dashboard_import:
   import_full_config: true
 
 improv_serial:
-  next_url: https://example.com/project-template/manual?ip={{ip_address}}&name={{device_name}}&version={{esphome_version}}
+  next_url: https://setup.harmony.cedric.kim/sense8266/success
