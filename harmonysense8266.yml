@@ -11,6 +11,11 @@ esphome:
     name: harmony.sense8266
     version: "1.0"
 
+esp8266:
+  board: nodemcuv2
+  framework:
+    version: recommended
+
 logger:
 
 api:
