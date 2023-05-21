@@ -1,0 +1,24 @@
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        yaml_file:
+        - harmonysense8266.yml
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Build ESPHome configuration
+        uses: esphome/build-action@v1
+        id: esphome-build
+        with:
+          yaml_file: '${{ matrix.yaml_file }}'
+      - name: 'Upload artifact'
+        uses: actions/upload-artifact@v3
+        with:
+          name: '${{ steps.esphome-build.outputs.name }}'
+          path: 'output/${{ steps.esphome-build.outputs.name }}.yml'
