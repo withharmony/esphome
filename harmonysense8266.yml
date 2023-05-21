@@ -28,7 +28,7 @@ ota:
 
 dashboard_import:
   package_import_url: github://withharmony/esphome/harmonysense8266.yml@main
-  import_full_config: true
+  import_full_config: false
 
 improv_serial:
   next_url: https://setup.harmony.cedric.kim/sense8266/success
