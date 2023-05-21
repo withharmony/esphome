@@ -21,4 +21,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: '${{ steps.esphome-build.outputs.name }}'
-          path: '${{ steps.esphome-build.outputs.name }}/${{ steps.esphome-build.outputs.name }}.yml'
+          path: '${{ steps.esphome-build.outputs.name }}/${{ steps.esphome-build.outputs.name }}.bin'
